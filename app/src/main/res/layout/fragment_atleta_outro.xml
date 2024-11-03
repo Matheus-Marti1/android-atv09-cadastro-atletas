@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtletaOutroFragment">
+
+    <EditText
+        android:id="@+id/etNomeAO"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/etDataNascimentoAO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDataNascimentoAO"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="@string/nascimento"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/etBairroAO"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeAO"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAO" />
+
+    <EditText
+        android:id="@+id/etBairroAO"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="@string/bairro"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/etAcademia"
+        app:layout_constraintStart_toStartOf="@+id/etDataNascimentoAO"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascimentoAO" />
+
+    <EditText
+        android:id="@+id/etAcademia"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/academia"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/etRecorde"
+        app:layout_constraintStart_toStartOf="@+id/etBairroAO"
+        app:layout_constraintTop_toBottomOf="@+id/etBairroAO" />
+
+    <EditText
+        android:id="@+id/etRecorde"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:hint="@string/recorde"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/cinza_hint"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrarAO"
+        app:layout_constraintStart_toStartOf="@+id/etAcademia"
+        app:layout_constraintTop_toBottomOf="@+id/etAcademia" />
+
+    <Button
+        android:id="@+id/btnCadastrarAO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="170dp"
+        android:text="@string/cadastrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRecorde" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

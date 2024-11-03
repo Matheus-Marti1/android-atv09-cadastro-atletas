@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cadastro de Atletas</string>
+    <string name="nome_aluno">Matheus Augusto Marti</string>
+    <string name="ra_aluno">RA: 1110482313017</string>
+    <string name="atleta_juvenil">Atleta Juvenil</string>
+    <string name="atleta_senior">Atleta Sênior</string>
+    <string name="atleta_outros">Outros Atletas</string>
+    <string name="nome">Nome</string>
+    <string name="nascimento">Data de nascimento</string>
+    <string name="bairro">Bairro</string>
+    <string name="problemas_cardiacos">Tem problemas cardíacos</string>
+    <string name="anos_praticados">Anos praticados</string>
+    <string name="academia">Academia</string>
+    <string name="recorde">Recorde em segundos</string>
+    <string name="cadastrar">Cadastrar</string>
+</resources>
